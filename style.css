@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i|Oswald:400,600,700&display=swap');
+
+body{
+	padding: 0 3em;
+	font-family: 'Open Sans', sans-serif;
+	color:#272822;
+	font-size: 14px;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 12s ease infinite;
+	-moz-animation: Gradient 12s ease infinite;
+	animation: Gradient 12s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+/*barra lateral + navegacion*/
+aside{
+	float:left;	
+	width: 20%;	
+	position: fixed;
+	height: 100%;
+	padding-top:2em;
+
+}
+
+
+aside img{
+	width: 70%;
+	height: auto;
+	border-radius:100px;
+	float; left;
+}
+
+aside .nav{
+	list-style: none;
+	padding-inline-start:0;	
+}
+
+aside .nav .nav-item{
+	width: 70%;
+	display: block;
+	background-color: #fff;
+	line-height: 2.5em;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding-left: 1em;
+	transition: width 1s;
+		-webkit-transition: width 1s;
+		-moz-transition: width 1s;
+		-ms-transition: width 1s;
+}
+
+aside .nav .nav-item:hover{
+	width: 90%;	
+}
+
+aside .nav .nav-item a{
+	text-decoration: none;
+	font-size: 1em;
+	display: block;
+	width: 70%;
+	font-weight: bold;
+	color:#7b4da5;
+}
+
+aside .nav .nav-item a:hover{
+	color: #e73c7e ;
+}
+
+/*cuerpo con los datos*/
+
+#main{
+	float:right;
+	width: 75%;
+}
+
+#main .section{
+	background-color:#fff;
+	border-radius: 3px;
+	padding: 1em 3em 2em 3em;
+	margin-bottom: 15px;
+	float: left;
+	/*min-height: 100vh;*/
+}
+
+h1, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;	
+}
+
+h1{
+	
+	font-weight: 300;
+	font-size: 2.5em;	
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2.1em;
+	text-transform: uppercase;
+	color:#482a79;	
+}
+
+
+#main .section .container{
+	float:left;
+
+}
+
+#main .section header{
+	border-bottom: 1px solid #482a79 ;
+}
+/*Quién soy*/
+
+#puesto{
+	font-weight: 400;
+	color:#482a79;	
+	margin-top:-2em;
+}
+
+#main .section .container .contact{
+	list-style: none;
+	padding-inline-start:0;
+}
+
+
+
+#main .section .container .contact a{
+	text-decoration: none;
+	color:#272822;
+	margin-bottom:1.5em;
+	display: block;
+	margin-bottom:1em;
+}
+
+#main .section .container .contact li i{
+	margin-right: 1.5em;
+	font-size: 1.5em;
+	color: #7b4da5;
+}
+
+/*Portfolio*/
+
+#main .section .container .portfolio-section {
+	width: 100%;
+	float:left;
+}
+
+#main .section .container .portfolio-section .portfolio {
+	list-style: none;
+	
+	margin: 0 auto;
+}
+
+#main .section .container .portfolio-section .portfolio li {
+	display: inline;
+
+}
+
+
+
+
+.portfolio-item{
+	width: 150px;
+	height: 150px;
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display:block;
+	color: transparent;
+	font-size: 1.2em;
+	text-align: center;
+	background-position: center;
+	background-size: 100%;
+	transition: all 1s;
+		-webkit-transition: all 1s;
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+
+}
+
+.portfolio-item > h6{
+	margin-top: 45%;
+}
+
+
+.portfolio-item:hover{
+	color:#000;
+	background-position: center;
+	background-size: 130%;
+}
+
+#curriculum-vitae{
+	background-image:url("imgs/cv-icon.png");	
+}
+
+
+#curriculum-vitae:hover{
+	background-image:url("imgs/cv-icon-hover.png");	
+}
+
+#rompecabezas{
+	background-image:url("imgs/rompecabezas-icon.png");
+	
+}
+
+
+#rompecabezas:hover{
+	background-image:url("imgs/rompecabezas-icon-hover.png");
+}
+
+#pixel-art{
+	background-image:url("imgs/pixel-art-icon.png");
+}
+
+
+#pixel-art:hover{
+	background-image:url("imgs/pixel-art-icon-hover.png");
+}
+
+#ciudad-zombie{
+	background-image:url("imgs/ciudad-zombie-icon.png");
+}
+
+
+#ciudad-zombie:hover{
+	background-image:url("imgs/ciudad-zombie-icon-hover.png");
+}
+
+#recargado{
+	background-image:url("imgs/recargado-icon.png");
+}
+
+
+#recargado:hover{
+	background-image:url("imgs/recargado-icon-hover.png");
+}
+
+#mapa-interactivo{
+	background-image:url("imgs/mapa-interactivo-icon.png");
+}
+
+
+#mapa-interactivo:hover{
+	background-image:url("imgs/mapa-interactivo-icon-hover.png");
+}
+
+#peli-vs-peli{
+	background-image:url("imgs/peli-vs-peli-icon.png");
+}
+
+
+#peli-vs-peli:hover{
+	background-image:url("imgs/peli-vs-peli-icon-hover.png");
+}
+
+#que-veo{
+	background-image:url("imgs/que-veo-icon.png");
+}
+
+
+#que-veo:hover{
+	background-image:url("imgs/que-veo-icon-hover.png");
+}
+
+#luxeperfil{
+	background-image:url("imgs/luxeperfil-icon.png");
+}
+
+
+#luxeperfil:hover{
+	background-image:url("imgs/luxeperfil-icon-hover.png");
+}
+
+#ingeo{
+	background-image:url("imgs/ingeo-icon.png");
+}
+
+
+#ingeo:hover{
+	background-image:url("imgs/ingeo-icon-hover.png");
+}
+
+#kithara{
+	background-image:url("imgs/kithara-icon.png");
+}
+
+
+#kithara:hover{
+	background-image:url("imgs/kithara-icon-hover.png");
+}
+
+#unagota_desalud{
+	background-image:url("imgs/unagotadesalud-icon.png");
+}
+
+
+#unagota_desalud:hover{
+	background-image:url("imgs/unagotadesalud-icon-hover.png");
+}
+/*FOOTER*/
+
+footer{
+	width: 75%;
+	float: right;
+	clear:left;
+	height: 150px;
+	padding:20px;
+	margin-top:30px;
+}
+
+footer > ul{
+	list-style: none;
+	display:block;
+	clear:both;
+	text-align: center;
+}
+
+footer > ul > li{
+	display: inline;
+	margin-right: 100px;
+}
+
+footer > ul > li:last-of-type{
+	margin-right: 0;
+}
+
+footer > ul > li > a > i{
+	color: #fff;
+	display:block;
+	font-size:2.5em;
+	transition: color 1s;
+		-webkit-transition: color 1s;
+		-moz-transition: color 1s;
+		-ms-transition: color 1s;
+	cursor:pointer;	
+}
+
+footer > ul > li > a > i:hover{
+	color: rgba(255,255,255,0.3);
+
+}
+
+footer > h5{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	text-align: center;
+}
